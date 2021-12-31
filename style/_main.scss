@@ -1,0 +1,54 @@
+.background_image {
+    background: url("../images/mobile/image-header.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    padding: 1.25rem;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+
+
+    .arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        h1 {
+            color: $white;
+            text-align: center;
+            font-family: Fraunces, sans-serif;
+        }
+
+        img {
+            width: 36px;
+            height: 114px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .background_image {
+        background: url("../images/desktop/image-header.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    main {
+        padding: 5rem;
+
+        .arrow {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
