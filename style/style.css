@@ -10,6 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-size: 18px;
+  position: relative;
 }
 
 img {
@@ -23,5 +24,106 @@ img {
 
 .attribution a {
   color: #3e52a3;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li {
+  color: white;
+  font-family: Barlow, sans-serif;
+}
+
+header nav ul li .contact {
+  background: white;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  font-family: Fraunces, sans-serif;
+  color: #23303e;
+}
+
+@media screen and (max-width: 1023px) {
+  header, .hamburger {
+    padding: 1.25rem;
+  }
+  header .hamburger, .hamburger .hamburger {
+    position: fixed;
+    right: 0;
+    border: none;
+    background: transparent;
+    z-index: 3;
+  }
+  header nav ul, .hamburger nav ul {
+    position: relative;
+    display: none;
+  }
+  header nav ul li, .hamburger nav ul li {
+    color: #5a636c;
+  }
+  header nav ul li .contact, .hamburger nav ul li .contact {
+    background: #fad400;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-family: Fraunces, sans-serif;
+    color: #23303e;
+  }
+  header nav ul.show, .hamburger nav ul.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background: white;
+    left: 0;
+    right: 0;
+    width: 87.5%;
+    margin: auto;
+    top: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  header nav ul.show .triangle, .hamburger nav ul.show .triangle {
+    top: -10%;
+    right: 0;
+    border-bottom: 3rem solid white;
+    position: absolute;
+    border-left: 3rem solid transparent;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2rem;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

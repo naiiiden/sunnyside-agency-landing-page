@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+
+            li {
+                color: $white;
+                font-family: Barlow, sans-serif;
+
+                .contact {
+                    background: $white;
+                    padding: .5rem 1rem;
+                    border-radius: 2rem;
+                    font-family: Fraunces, sans-serif;
+                    color: $very-dark-desaturated-blue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header, .hamburger {
+        padding: 1.25rem;
+        
+        .hamburger {
+            position: fixed;
+            right: 0;
+            border: none;
+            background: transparent;
+            z-index: 3;
+        }
+
+        nav {
+            ul {
+                position: relative;
+                display: none;
+
+                li {
+                    color: $very-dark-grayish-blue;
+
+                    .contact {
+                        background: $yellow;
+                        padding: .5rem 1rem;
+                        border-radius: 2rem;
+                        font-family: Fraunces, sans-serif;
+                        color: $very-dark-desaturated-blue;
+                    }
+                }
+
+                &.show {
+                    display: flex;
+                    flex-direction: column;
+                    position: fixed;
+                    background: $white;
+                    left: 0;
+                    right: 0;
+                    width: 87.5%;
+                    margin: auto;
+                    top: 4rem;
+                    align-items: center;
+                    padding: 1rem;
+
+                    .triangle {
+                        top: -10%;
+                        right: 0;
+                        border-bottom: 3rem solid $white;
+                        position: absolute;
+                        border-left: 3rem solid transparent;
+                      }
+                    
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 2rem;
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            ul {
+                display: flex;
+            }
+        }
+    }
+}
