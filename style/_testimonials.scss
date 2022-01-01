@@ -1,0 +1,75 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+
+    &:nth-last-child(3) {
+        padding-bottom: 0;
+    }
+
+    h2 {
+        font-family: Fraunces, sans-serif;
+        color: $grayish-blue;
+        font-size: 1.25rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+
+        img {
+            max-width: 4rem;
+            border-radius: 50%;
+        }
+
+        p {
+            font-family: Barlow, sans-serif;
+            color: $very-dark-grayish-blue;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+
+            p {
+                font-family: Fraunces, sans-serif;
+                color: $very-dark-desaturated-blue;
+            }
+
+            small {
+                font-family: Barlow, sans-serif;
+                color: $grayish-blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonials {
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            article {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .testimonials {
+        .row {
+            width: 70%;
+            justify-content: space-between;
+        }
+    }
+}

@@ -485,4 +485,100 @@ section .bg_image {
     height: 50vh;
   }
 }
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.testimonials:nth-last-child(3) {
+  padding-bottom: 0;
+}
+
+.testimonials h2 {
+  font-family: Fraunces, sans-serif;
+  color: #a7abae;
+  font-size: 1.25rem;
+}
+
+.testimonials article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.testimonials article img {
+  max-width: 4rem;
+  border-radius: 50%;
+}
+
+.testimonials article p {
+  font-family: Barlow, sans-serif;
+  color: #5a636c;
+}
+
+.testimonials article .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .25rem;
+}
+
+.testimonials article .name p {
+  font-family: Fraunces, sans-serif;
+  color: #23303e;
+}
+
+.testimonials article .name small {
+  font-family: Barlow, sans-serif;
+  color: #a7abae;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  .testimonials .row article {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .testimonials .row {
+    width: 70%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=style.css.map */
