@@ -260,14 +260,13 @@ section .bg_image {
   }
   section .white_bg {
     width: 50%;
-    padding: 3rem;
   }
   section .white_bg .text {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: start;
-    width: 50%;
+    width: 75%;
     gap: 1rem;
   }
   section .bg_image {
@@ -275,6 +274,12 @@ section .bg_image {
     background: url("../images/desktop/image-transform.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section .white_bg .text {
+    width: 40%;
   }
 }
 
@@ -353,14 +358,14 @@ section .bg_image {
   }
   .section2 .white_bg {
     width: 50%;
-    padding: 3rem;
+    padding: 0;
   }
   .section2 .white_bg .text {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: start;
-    width: 50%;
+    width: 75%;
     gap: 1rem;
   }
   .section2 .bg_image {
@@ -368,6 +373,12 @@ section .bg_image {
     background: url("../images/desktop/image-stand-out.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section2 .white_bg .text {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
