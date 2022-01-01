@@ -586,4 +586,82 @@ section .bg_image {
             justify-content: space-between;
   }
 }
+
+.decorations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.decorations div {
+  width: 100%;
+  height: 50vh;
+}
+
+.decorations .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.decorations .milk {
+  background: url("../images/mobile/image-gallery-milkbottles.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.decorations .orange {
+  background: url("../images/mobile/image-gallery-orange.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.decorations .cone {
+  background: url("../images/mobile/image-gallery-cone.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.decorations .sugar {
+  background: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+  .decorations {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .decorations .milk {
+    background: url("../images/desktop/image-gallery-milkbottles.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .decorations .orange {
+    background: url("../images/desktop/image-gallery-orange.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .decorations .cone {
+    background: url("../images/desktop/image-gallery-cone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .decorations .sugar {
+    background: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
 /*# sourceMappingURL=style.css.map */
