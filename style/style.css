@@ -277,4 +277,97 @@ section .bg_image {
     background-repeat: no-repeat;
   }
 }
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.section2 .white_bg {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.section2 .white_bg .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .75rem;
+}
+
+.section2 .white_bg h2, .section2 .white_bg a {
+  color: #23303e;
+  font-family: Fraunces, sans-serif;
+}
+
+.section2 .white_bg p {
+  font-family: Barlow, sans-serif;
+  color: #5a636c;
+}
+
+.section2 .white_bg a {
+  border-bottom: 5px solid #fe7867;
+  border-radius: .5rem;
+  line-height: .8;
+}
+
+.section2 .bg_image {
+  height: 50vh;
+  background: url("../images/mobile/image-stand-out.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .section2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .section2 .white_bg {
+    width: 50%;
+    padding: 3rem;
+  }
+  .section2 .white_bg .text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    width: 50%;
+    gap: 1rem;
+  }
+  .section2 .bg_image {
+    width: 50%;
+    background: url("../images/desktop/image-stand-out.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
 /*# sourceMappingURL=style.css.map */

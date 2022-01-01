@@ -1,0 +1,70 @@
+.section2 {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .white_bg {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .75rem;
+        }
+
+        h2, a {
+            color: $very-dark-desaturated-blue;
+            font-family: Fraunces, sans-serif;
+        }
+
+        p {
+            font-family: Barlow, sans-serif;
+            color: $very-dark-grayish-blue;
+        }
+
+        a { 
+            border-bottom: 5px solid $soft-red;
+            border-radius: .5rem;
+            line-height: .8;
+        }
+    }
+
+    .bg_image {
+        height: 50vh;
+        background: url("../images/mobile/image-stand-out.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section2 {
+        flex-direction: row-reverse;
+
+        .white_bg {
+            width: 50%;
+            padding: 3rem;
+
+            .text {
+                align-items: flex-start;
+                text-align: start;
+                width: 50%;
+                gap: 1rem;
+            }
+        }
+
+        .bg_image {
+            width: 50%;
+            background: url("../images/desktop/image-stand-out.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
