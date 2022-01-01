@@ -66,6 +66,7 @@ header {
                     top: 4rem;
                     align-items: center;
                     padding: 1rem;
+                    z-index: 2;
 
                     .triangle {
                         top: -10%;
@@ -93,6 +94,13 @@ header {
         nav {
             ul {
                 display: flex;
+
+                li {
+                    .contact:hover {
+                        background: #71cefe;
+                        transition: 0.2s ease;
+                    }
+                }
             }
         }
     }

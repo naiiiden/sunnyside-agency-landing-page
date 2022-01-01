@@ -29,9 +29,14 @@ section {
         }
 
         a { 
-            border-bottom: 5px solid $yellow;
+            border-bottom: 5px solid rgba(250, 212, 0, 0.5);
             border-radius: .5rem;
-            line-height: .8;
+            line-height: .6;
+
+            &:hover {
+                border-bottom: 5px solid $yellow;
+                transition: 0.3s ease;
+            }
         }
     }
 
