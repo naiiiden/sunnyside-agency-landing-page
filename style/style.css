@@ -498,11 +498,8 @@ section .bg_image {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  gap: 2rem;
   padding: 2rem 0;
-}
-
-.testimonials:nth-last-child(3) {
-  padding-bottom: 0;
 }
 
 .testimonials h2 {
@@ -525,6 +522,10 @@ section .bg_image {
   text-align: center;
   gap: 1rem;
   padding: 1.5rem;
+}
+
+.testimonials article:nth-last-child(3) {
+  padding-bottom: 0;
 }
 
 .testimonials article img {
@@ -559,6 +560,10 @@ section .bg_image {
 }
 
 @media screen and (min-width: 1024px) {
+  .testimonials {
+    padding: 10rem 0;
+    gap: 3rem;
+  }
   .testimonials .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,7 +574,7 @@ section .bg_image {
     width: 100%;
   }
   .testimonials .row article {
-    width: 30%;
+    width: 33%;
   }
 }
 
