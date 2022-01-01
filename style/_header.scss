@@ -40,7 +40,18 @@ header {
         nav {
             ul {
                 position: relative;
-                display: none;
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                background: $white;
+                left: 0;
+                right: 0;
+                width: 87.5%;
+                margin: auto;
+                top: -50%;
+                align-items: center;
+                padding: 1rem;
+                z-index: 2;
 
                 li {
                     color: $very-dark-grayish-blue;
@@ -55,18 +66,8 @@ header {
                 }
 
                 &.show {
-                    display: flex;
-                    flex-direction: column;
-                    position: fixed;
-                    background: $white;
-                    left: 0;
-                    right: 0;
-                    width: 87.5%;
-                    margin: auto;
+                    transition: 0.3s ease;
                     top: 4rem;
-                    align-items: center;
-                    padding: 1rem;
-                    z-index: 2;
 
                     .triangle {
                         top: -10%;
