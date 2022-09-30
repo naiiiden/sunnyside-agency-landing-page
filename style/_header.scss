@@ -10,8 +10,12 @@ header {
             gap: 1rem;
 
             li {
-                color: $white;
                 font-family: Barlow, sans-serif;
+                
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
 
                 .contact {
                     background: $white;
@@ -54,7 +58,10 @@ header {
                 z-index: 2;
 
                 li {
-                    color: $very-dark-grayish-blue;
+                    a {
+                        color: $very-dark-grayish-blue;
+                        text-decoration: none;
+                    }
 
                     .contact {
                         background: $yellow;

@@ -40,8 +40,11 @@ header nav ul {
   gap: 1rem;
 }
 header nav ul li {
-  color: hsl(0deg, 0%, 100%);
   font-family: Barlow, sans-serif;
+}
+header nav ul li a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
 }
 header nav ul li .contact {
   background: hsl(0deg, 0%, 100%);
@@ -77,8 +80,9 @@ header nav ul li .contact {
     padding: 1rem;
     z-index: 2;
   }
-  header nav ul li, .hamburger nav ul li {
+  header nav ul li a, .hamburger nav ul li a {
     color: hsl(213deg, 9%, 39%);
+    text-decoration: none;
   }
   header nav ul li .contact, .hamburger nav ul li .contact {
     background: hsl(51deg, 100%, 49%);
