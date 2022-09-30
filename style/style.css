@@ -29,24 +29,24 @@ a {
   color: hsl(228deg, 45%, 44%);
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header nav ul {
+.header nav ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
 }
-header nav ul li {
+.header nav ul li {
   font-family: Barlow, sans-serif;
 }
-header nav ul li a {
+.header nav ul li a {
   color: hsl(0deg, 0%, 100%);
   text-decoration: none;
 }
-header nav ul li .contact {
+.header nav ul li .contact {
   background: hsl(0deg, 0%, 100%);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -55,17 +55,17 @@ header nav ul li .contact {
 }
 
 @media screen and (max-width: 1023px) {
-  header, .hamburger {
+  .header, .hamburger {
     padding: 1.25rem;
   }
-  header .hamburger, .hamburger .hamburger {
+  .header .hamburger, .hamburger .hamburger {
     position: fixed;
     right: 0;
     border: none;
     background: transparent;
     z-index: 3;
   }
-  header nav ul, .hamburger nav ul {
+  .header nav ul, .hamburger nav ul {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -80,22 +80,22 @@ header nav ul li .contact {
     padding: 1rem;
     z-index: 2;
   }
-  header nav ul li a, .hamburger nav ul li a {
+  .header nav ul li a, .hamburger nav ul li a {
     color: hsl(213deg, 9%, 39%);
     text-decoration: none;
   }
-  header nav ul li .contact, .hamburger nav ul li .contact {
+  .header nav ul li .contact, .hamburger nav ul li .contact {
     background: hsl(51deg, 100%, 49%);
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     font-family: Fraunces, sans-serif;
     color: hsl(212deg, 27%, 19%);
   }
-  header nav ul.show, .hamburger nav ul.show {
+  .header nav ul.show, .hamburger nav ul.show {
     transition: 0.3s ease;
     top: 4rem;
   }
-  header nav ul.show .triangle, .hamburger nav ul.show .triangle {
+  .header nav ul.show .triangle, .hamburger nav ul.show .triangle {
     top: -10%;
     right: 0;
     border-bottom: 3rem solid hsl(0deg, 0%, 100%);
@@ -104,16 +104,16 @@ header nav ul li .contact {
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
+  .header {
     padding: 2rem;
   }
-  header .hamburger {
+  .header .hamburger {
     display: none;
   }
-  header nav ul {
+  .header nav ul {
     display: flex;
   }
-  header nav ul li .contact:hover {
+  .header nav ul li .contact:hover {
     background: #71cefe;
     transition: 0.2s ease;
   }
@@ -127,25 +127,25 @@ header nav ul li .contact {
   position: relative;
 }
 
-main {
+.main {
   padding: 1.25rem;
   position: absolute;
   right: 50%;
   bottom: 50%;
   transform: translate(50%, 50%);
 }
-main .arrow {
+.main .arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-main .arrow h1 {
+.main .arrow h1 {
   color: hsl(0deg, 0%, 100%);
   text-align: center;
   font-family: Fraunces, sans-serif;
 }
-main .arrow img {
+.main .arrow img {
   width: 36px;
   height: 114px;
 }
@@ -157,10 +157,10 @@ main .arrow img {
     background-repeat: no-repeat;
     background-position: bottom;
   }
-  main {
+  .main {
     padding: 5rem;
   }
-  main .arrow h1 {
+  .main .arrow h1 {
     font-size: 4rem;
   }
 }

@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header {
 }
 
 @media screen and (max-width: 1023px) {
-    header, .hamburger {
+    .header, .hamburger {
         padding: 1.25rem;
         
         .hamburger {
@@ -92,7 +92,7 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-    header {
+    .header {
         padding: 2rem;
 
         .hamburger {

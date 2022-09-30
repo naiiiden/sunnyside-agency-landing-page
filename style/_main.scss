@@ -7,7 +7,7 @@
     position: relative;
 }
 
-main {
+.main {
     padding: 1.25rem;
     position: absolute;
     right: 50%;
@@ -42,7 +42,7 @@ main {
         background-position: bottom;
     }
 
-    main {
+    .main {
         padding: 5rem;
 
         .arrow {
