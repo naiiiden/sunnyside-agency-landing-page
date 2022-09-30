@@ -195,6 +195,7 @@ section .white_bg a {
   border-bottom: 5px solid rgba(250, 212, 0, 0.5);
   border-radius: 0.5rem;
   line-height: 0.6;
+  text-decoration: none;
 }
 section .white_bg a:hover {
   border-bottom: 5px solid hsl(51deg, 100%, 49%);
@@ -264,6 +265,7 @@ section .bg_image {
   border-bottom: 5px solid rgba(254, 120, 103, 0.5);
   border-radius: 0.5rem;
   line-height: 0.6;
+  text-decoration: none;
 }
 .section2 .white_bg a:hover {
   border-bottom: 5px solid hsl(7deg, 99%, 70%);
