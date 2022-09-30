@@ -389,7 +389,7 @@ section .bg_image {
 }
 .testimonials h2 {
   font-family: Fraunces, sans-serif;
-  color: hsl(210deg, 4%, 67%);
+  color: #56595D;
   font-size: 1.25rem;
 }
 .testimonials .article {
@@ -422,7 +422,7 @@ section .bg_image {
 }
 .testimonials .article .name small {
   font-family: Barlow, sans-serif;
-  color: hsl(210deg, 4%, 67%);
+  color: #56595D;
 }
 
 @media screen and (min-width: 1024px) {
