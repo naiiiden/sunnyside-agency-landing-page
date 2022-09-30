@@ -407,7 +407,7 @@ section .bg_image {
   max-width: 4rem;
   border-radius: 50%;
 }
-.testimonials .article p {
+.testimonials .article blockquote {
   font-family: Barlow, sans-serif;
   color: hsl(213deg, 9%, 39%);
 }
